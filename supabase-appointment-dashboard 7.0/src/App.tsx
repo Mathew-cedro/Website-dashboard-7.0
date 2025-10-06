@@ -251,7 +251,7 @@ const App: React.FC = () => {
       <Sidebar activePage={activePage} setActivePage={setActivePage} />
       <div className="flex-1 flex flex-col">
         <Header />
-        <main className={`flex-1 p-4 sm:p-6 lg:p-8 overflow-y-auto ${animationClass}`}>
+        <main className={`flex-1 p-4 sm:p-6 lg:p-8 overflow-y-auto scrollbar-thin ${animationClass}`}>
           <div className="container mx-auto">
             {activePage === 'Dashboard' && (
                <>

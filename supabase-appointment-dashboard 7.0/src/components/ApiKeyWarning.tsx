@@ -35,7 +35,7 @@ const ApiKeyWarning: React.FC = () => {
             <li>
               Add a new variable named{' '}
               <code className="bg-slate-200 dark:bg-slate-900/50 text-twitch-purple font-mono p-1 rounded">
-                VITE_API_KEY
+                API_KEY
               </code>
               .
             </li>

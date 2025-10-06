@@ -46,4 +46,25 @@ const Sidebar: React.FC<SidebarProps> = ({ activePage, setActivePage }) => {
   ];
 
   return (
-    <nav className="w-64 bg-light-card dark:bg-twitch-card p-4 flex flex-col border-r border-light-border dark:border-slate-700 shadow-2
+    <nav className="w-64 bg-light-card dark:bg-twitch-card p-4 flex flex-col border-r border-light-border dark:border-slate-700 shadow-2xl">
+      <div className="flex justify-center items-center py-4 mb-4">
+        <HeaderIcon />
+      </div>
+      <div className="flex-grow">
+        <ul className="space-y-2">
+          {navItems.map(item => (
+            <NavItem
+                key={item.label}
+                icon={item.icon}
+                label={item.label}
+                active={activePage === item.label}
+                onClick={() => setActivePage(item.label)}
+            />
+          ))}
+        </ul>
+      </div>
+    </nav>
+  );
+};
+
+export default Sidebar;
