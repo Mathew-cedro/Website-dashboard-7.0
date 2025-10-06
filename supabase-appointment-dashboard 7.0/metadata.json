@@ -1,0 +1,5 @@
+{
+  "name": "Supabase Appointment Dashboard",
+  "description": "An interactive dashboard that visualizes appointment data from a Supabase database using pie charts and generates key facts with the Gemini API.",
+  "requestFramePermissions": []
+}
